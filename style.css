@@ -1,0 +1,68 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+header {
+    height: 20vh;
+    width: auto;
+    background-color: skyblue;
+}
+.mainTitle {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 10vh;
+    padding: 0%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+.cards {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    border: 1px solid grey;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+h2{
+    font-family:'Raleway', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    padding-top: 110px;
+    color:whitesmoke;
+    text-shadow: 1px solid black;
+}
+.italian {
+    background-image: url(https://images.pexels.com/photos/7848820/pexels-photo-7848820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    
+}
+.french {
+    background-image: url(https://images.pexels.com/photos/2704910/pexels-photo-2704910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    
+}
+.arabic {
+    background-image: url(https://images.pexels.com/photos/5472511/pexels-photo-5472511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+   
+}
+.other {
+    background-image: url(https://images.pexels.com/photos/2929910/pexels-photo-2929910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(109, 109, 109, 0.6);
+}
+.card:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: none;
+}
+h2.card:hover{
+    color: black;
+}
