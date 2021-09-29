@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
@@ -20,36 +21,44 @@
     </header>
     <main class="main">
         <div class="cards">
-            <div class="card italian">
-                <h2>Italian</h2>
-            </div>
-            <div class="card french"><h2>French</h2></div>
-            <div class="card arabic"><h2>Arabic</h2></div>
-            <div class="card other"><h2>Other</h2></div>
+            <div class="card italian"><div class="overlay"><h2>Italian</h2></div></div>
+            <div class="card french"><div class="overlay"><h2>French</h2></div></div>
+            <div class="card arabic"><div class="overlay"><h2>Arabic</h2></div></div>
+            <div class="card other"><div class="overlay"><h2>Other</h2></div></div>
         </div>
         <div class="subscribe">
             <form action="select">
-            <fieldset>
-                <legend>Choose your preferences:</legend>
+            <p>Choose your favorite newsletter:</p>
 
                 <input type="checkbox" id="italian" name="language">
                 <label for="italian">Italian</label><br>
-
+                
                 <input type="checkbox" id="french" name="language">
                 <label for="french">French</label><br>
-
+                
                 <input type="checkbox" id="arabic" name="language">
                 <label for="arabic">Arabic</label><br>
-                
-                <button type="submit">Done</button>
-            </fieldset>
+
+                <input type="checkbox" id="other" name="language">
+                <label for="other">Other</label><br>
+            
+                <p>Enter your email:</p>
+                <input type="text" id="email" name="email" placeholder="Email address">
+                <button type="button" class="submit">Done</button>
+            
             </form>
         </div>
     </main>
     <footer>
         <p>October 2021</p>
-        <button type="button">Back to top</button>
+        
+        <button class="scrollBack">
+        <i class="fas fa-globe-europe"></i></button>
     </footer>
+    
+    
+
+
     <script src="app.js"></script>
 </body>
 </html>

@@ -21,48 +21,112 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding: 20px 10px 50px 10px;
 }
 .card {
     border: 1px solid grey;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: inline-block;
     margin: 10px;
     border-radius: 5%;
-    overflow: hidden;
+    overflow: none;
+    position: relative;
 }
-h2{
-    font-family:'Raleway', sans-serif;
-    font-size: 3vh;
-    text-align: center;
-    padding-top: 110px;
+.overlay{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-color: rgba(109, 109, 109, 0.8);
     color:whitesmoke;
     text-shadow: 1px solid black;
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+    margin: auto;
+    display: flex;
+    border-radius: 5%;
+    overflow: none;
+    position: relative;
+}
+h2{
+    margin: 0%;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding-top:45%;
 }
 .italian {
     background-image: url(https://images.pexels.com/photos/7848820/pexels-photo-7848820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
-    
 }
 .french {
     background-image: url(https://images.pexels.com/photos/2704910/pexels-photo-2704910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
-    
 }
 .arabic {
     background-image: url(https://images.pexels.com/photos/5472511/pexels-photo-5472511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
-   
 }
 .other {
     background-image: url(https://images.pexels.com/photos/2929910/pexels-photo-2929910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(109, 109, 109, 0.6);
 }
-.card:hover {
-    transition: 0.3s ease-in-out;
-    box-shadow: none;
-}
-h2.card:hover{
+.card:hover .overlay{
+    height: 0%;
     color: black;
+    font-weight: bolder;
+    transition: ease .5s;
+}
+.subscribe{
+    border: 1px solid grey;
+    width: 900px;
+    height: fit-content;
+    border-radius: 5%;
+    overflow: none;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: light;
+    background-color: rgba(109, 109, 109, 0.8);
+    color: white;
+   
+}
+.subscribe p{
+    font-size: 25px;
+}
+input{
+    margin: 12px;
+}
+.submit{
+    border-radius: 5%;
+    background-color: white;
+    font-family:'Raleway', sans-serif;
+    border:none;
+}
+#email{
+    padding: 0%;
+    margin: 0%;
+    height: 25px;
+}
+
+.scrollBack{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden; 
+    border: none;
+}
+.fa-globe-europe{
+    margin-left: -10px;
+    margin-top: -3px;
+    font-size: 50px;
+
 }
