@@ -15,3 +15,18 @@ btnScrollToTop.addEventListener("click", function(){
     
   
 })
+
+
+//const thanks = document.querySelector('input[type="submit"]');
+//thanks.addEventListener("click",createElement);
+function createElement(){
+  document.querySelector("#thankYou").innerText = "Thank You!";
+  console.log("hello")
+}
+
+
+
+
+/*<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<button type="submit" class="send">Send</button>*/

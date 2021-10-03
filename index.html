@@ -26,27 +26,38 @@
             <div class="card arabic"><div class="overlay"><h2>Arabic</h2></div></div>
             <div class="card other"><div class="overlay"><h2>Other</h2></div></div>
         </div>
-        <div class="subscribe">
-            <form action="select">
-            <p>Choose your favorite newsletter:</p>
-
+        <div class="subscribeAll">
+            <div class="checkbox">
+                <form action="select">
+                    
+                <p>Choose your favorite newsletter:</p>
+                
                 <input type="checkbox" id="italian" name="language">
-                <label for="italian">Italian</label><br>
+                <label for="italian">Italian</label>
                 
                 <input type="checkbox" id="french" name="language">
-                <label for="french">French</label><br>
+                <label for="french">French</label>
                 
                 <input type="checkbox" id="arabic" name="language">
-                <label for="arabic">Arabic</label><br>
+                <label for="arabic">Arabic</label>
 
                 <input type="checkbox" id="other" name="language">
-                <label for="other">Other</label><br>
-            
-                <p>Enter your email:</p>
-                <input type="text" id="email" name="email" placeholder="Email address">
-                <button type="button" class="submit">Done</button>
-            
-            </form>
+                <label for="other">Other</label>
+               
+                </form><br>
+            </div><br>
+
+            <div class="subscribeDiv">
+                <form class="newsletter" action="https://formsubmit.co/mejsunalghoul@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" >
+                    <input type="email" name="email" placeholder="Email" >
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="send">Send</button>
+                    <p id="thankYou"></p>
+                </form>
+            </div>
+                
         </div>
     </main>
     <footer>
