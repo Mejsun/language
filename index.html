@@ -26,38 +26,35 @@
             <div class="card arabic"><div class="overlay"><h2>Arabic</h2></div></div>
             <div class="card other"><div class="overlay"><h2>Other</h2></div></div>
         </div>
-        <div class="subscribeAll">
-            <div class="checkbox">
-                <form action="select">
-                    
-                <p>Choose your favorite newsletter:</p>
+        <div class="subscribe">
+                <form class="newsletter" method="POST" action="https://formsubmit.co/mejsunalghoul@gmail.com" target="_blank">
+                    <div class="checkbox">
+                <p>Choose your new language:</p>
                 
-                <input type="checkbox" id="italian" name="language">
+                <input type="checkbox" id="italian" name="italian">
                 <label for="italian">Italian</label>
                 
-                <input type="checkbox" id="french" name="language">
+                <input type="checkbox" id="french" name="french">
                 <label for="french">French</label>
                 
-                <input type="checkbox" id="arabic" name="language">
+                <input type="checkbox" id="arabic" name="arabic">
                 <label for="arabic">Arabic</label>
 
-                <input type="checkbox" id="other" name="language">
-                <label for="other">Other</label>
-               
-                </form><br>
-            </div><br>
+                <input type="checkbox" id="other" name="other">
+                <label for="other">Other</label> <br>
+                    </div>
+                <input type="text" name="name" placeholder="Name" >
+                <input type="email" name="email" placeholder="Email" >
 
-            <div class="subscribeDiv">
-                <form class="newsletter" action="https://formsubmit.co/mejsunalghoul@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Name" >
-                    <input type="email" name="email" placeholder="Email" >
-                    <input type="hidden" name="_subject" value="New submission!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <button type="submit" class="send">Send</button>
-                    <p id="thankYou"></p>
-                </form>
-            </div>
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="Thank you!">
+                <button type="submit" class="send">Send</button>
                 
+            </form>
+                <div class="subscribe thanks">
+                <p id="thanks">Thank you!</p>
+                </div>
         </div>
     </main>
     <footer>

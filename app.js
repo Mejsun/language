@@ -16,17 +16,13 @@ btnScrollToTop.addEventListener("click", function(){
   
 })
 
+const oldDiv = document.querySelector('div.subscribe');
+const subscribed = document.querySelector('.send');
+const newDiv = document.querySelector('div.thanks');
 
-//const thanks = document.querySelector('input[type="submit"]');
-//thanks.addEventListener("click",createElement);
-function createElement(){
-  document.querySelector("#thankYou").innerText = "Thank You!";
-  console.log("hello")
-}
-
-
+subscribed.addEventListener("click", function(oldDiv){
+  newDiv.style.display='block';
+} )
 
 
-/*<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<button type="submit" class="send">Send</button>*/
+
