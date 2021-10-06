@@ -25,4 +25,31 @@ subscribed.addEventListener("click", function(oldDiv){
 } )
 
 
+const containerIt = document.querySelector('div.containerIt');
+const cardIt = document.querySelector('div.italian');
+cardIt.addEventListener("click",function(cardIt){
+  containerIt.style.display='block';
+})
+const miNouns = document.querySelector('.miNouns');
+const miVerbs = document.querySelector('.miVerbs')
+const containerNounsIt = document.querySelector('div.containerNounsIt');
+const containerVerbsIt = document.querySelector('div.containerVerbsIt');
 
+miNouns.addEventListener('click', () =>{
+  if(containerNounsIt.style.display === "none"){
+    containerNounsIt.style.display="block";
+    containerVerbsIt.style.display="none";
+  }else{
+    containerNounsIt.style.display="none";
+  }
+});
+
+
+miVerbs.addEventListener('click', () =>{
+  if(containerVerbsIt.style.display === "none"){
+    containerVerbsIt.style.display="block";
+    containerNounsIt.style.display="none";
+  }else{
+    containerVerbsIt.style.display="none";
+  }
+});
