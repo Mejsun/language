@@ -27,13 +27,16 @@ subscribed.addEventListener("click", function(oldDiv){
 
 const containerIt = document.querySelector('div.containerIt');
 const cardIt = document.querySelector('div.italian');
-cardIt.addEventListener("click",function(cardIt){
-  containerIt.style.display='block';
-})
+const arrowIt = document.querySelector('.containerIt::after');
 const miNouns = document.querySelector('.miNouns');
 const miVerbs = document.querySelector('.miVerbs')
 const containerNounsIt = document.querySelector('div.containerNounsIt');
 const containerVerbsIt = document.querySelector('div.containerVerbsIt');
+
+cardIt.addEventListener("click",function(cardIt){
+  containerIt.style.display='block';
+  arrowIt.style.display='block';
+})
 
 miNouns.addEventListener('click', () =>{
   if(containerNounsIt.style.display === "none"){
@@ -53,3 +56,19 @@ miVerbs.addEventListener('click', () =>{
     containerVerbsIt.style.display="none";
   }
 });
+
+
+
+const menuContainer = document.querySelector(".menu");
+const items = menuContainer.querySelectorAll("li");
+
+for (let i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    const current = document.getElementsByClassName("active");
+
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  });
+}

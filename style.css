@@ -3,13 +3,13 @@ body {
     margin: 0%;
 }
 header {
-    height: 20vh;
+    height: 200px;
     width: auto;
     background-color: skyblue;
 }
 .mainTitle {
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 10vh;
+    font-size: 100px;
     padding: 0%;
     margin: auto;
     display: flex;
@@ -81,7 +81,6 @@ h2{
     border: 1px solid grey;
     width: 900px;
     height: fit-content;
-    border-radius: 5%;
     overflow: none;
     position: relative;
     justify-content: center;
@@ -95,6 +94,7 @@ h2{
    margin: auto;
    display: flex;
    padding-bottom: 40px;
+   border-radius: 2%;
 }
 .subscribe p{
     font-size: 25px;
@@ -172,12 +172,6 @@ h2{
     font-weight: bolder;
     letter-spacing: 3px;
 }
-footer{
-    background-color: cornsilk;
-    padding: 0;
-    margin: 30px 0 0 0 ;
-    height: 300px;
-}
 .containers{
     padding-bottom: 30px ;
 }
@@ -190,38 +184,11 @@ footer{
     flex-direction: column;
    display: none;
 }
-
-.containerIt:after {
+.containerIt::after {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 10%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-bottom-color: #62c0c9;
-	border-top: 0;
-	margin-left: -20px;
-	margin-top: -20px;
-}
-.containerFr:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 30%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-bottom-color: #62c0c9;
-	border-top: 0;
-	margin-left: -20px;
-	margin-top: -20px;
-}
-.containerAr:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 60%;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -264,6 +231,32 @@ footer{
     display: none;
 }
 .containerVerbsIt{
-    color: burlywood;
+    color: rgb(207, 205, 207);
     display: none;
+}
+.active{
+    color: seagreen;
+    border-bottom: 1px solid gainsboro;
+}
+footer{
+    background-color: cornsilk;
+    padding: 0;
+    margin: 30px 0 0 0 ;
+    height: 150px;
+    font-family: 'raleway', sans-serif;
+}
+footer p{
+    padding: 50px 0px 0px 20px;
+    display: block;
+}
+footer a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 18px;
+}
+.miniMenu{
+    padding: 30px 0px 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
