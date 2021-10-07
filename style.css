@@ -3,13 +3,13 @@ body {
     margin: 0%;
 }
 header {
-    height: 20vh;
+    height: 200px;
     width: auto;
     background-color: skyblue;
 }
 .mainTitle {
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 10vh;
+    font-size: 100px;
     padding: 0%;
     margin: auto;
     display: flex;
@@ -203,6 +203,7 @@ footer{
 	border-top: 0;
 	margin-left: -20px;
 	margin-top: -20px;
+    display: none;
 }
 .containerFr:after {
 	content: '';
@@ -216,6 +217,7 @@ footer{
 	border-top: 0;
 	margin-left: -20px;
 	margin-top: -20px;
+    display: none;
 }
 .containerAr:after {
 	content: '';
@@ -229,6 +231,7 @@ footer{
 	border-top: 0;
 	margin-left: -20px;
 	margin-top: -20px;
+    display: none;
 }
 .list{
     list-style: none;
@@ -245,6 +248,7 @@ footer{
     border-bottom: 1px solid gainsboro;
     cursor: pointer;
 }
+
 .menuItem{
     padding: 10px 30px 10px 30px;
     border-bottom: 1px transparent gainsboro;
@@ -266,4 +270,17 @@ footer{
 .containerVerbsIt{
     color: burlywood;
     display: none;
+}
+.containerNounsFr{
+    color: rgb(70, 70, 65);
+    display: none;
+}
+.containerVerbsFr{
+    color: red;
+    display: none;
+}
+
+.active{
+    color: seagreen;
+    border-bottom: 1px solid gainsboro;
 }
