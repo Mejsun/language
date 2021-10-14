@@ -27,7 +27,6 @@ subscribed.addEventListener("click", function(oldDiv){
 
 const containerIt = document.querySelector('div.containerIt');
 const cardIt = document.querySelector('div.italian');
-const arrowIt = document.querySelector('.containerIt::after');
 const miNouns = document.querySelector('.miNouns');
 const miVerbs = document.querySelector('.miVerbs')
 const containerNounsIt = document.querySelector('div.containerNounsIt');
