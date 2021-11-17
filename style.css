@@ -186,12 +186,23 @@ h2{
 }
 .container {
 	position: relative;
-	background: #62c0c9;
     width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: column;
-   display: none;
+    display: none;
+}
+.containerIt{
+    background: #b0d5d8;
+}
+.containerAr{
+    background: burlywood;
+}
+.containerFr{
+    background: cornflowerblue;
+}
+.containerO{
+    background: rgb(45, 172, 144);
 }
 .containerIt::after {
 	content: '';
@@ -201,12 +212,51 @@ h2{
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
-	border-bottom-color: #62c0c9;
+	border-bottom-color: #b0d5d8;
 	border-top: 0;
 	margin-left: -20px;
 	margin-top: -20px;
 }
-.list{
+.containerFr::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 35%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: cornflowerblue;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.containerAr::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 63%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: burlywood;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.containerO::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 90%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: rgb(45, 172, 144);
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.list, .othertext{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -221,7 +271,7 @@ h2{
     border-bottom: 1px solid gainsboro;
     cursor: pointer;
 }
-.menuItem{
+.menuItem, .othertext{
     padding: 10px 30px 10px 30px;
     border-bottom: 1px transparent gainsboro;
     display: block;
@@ -233,14 +283,6 @@ h2{
     font-family: 'Raleway', sans-serif;
     padding: 20px;
     height: fit-content;
-    display: none;
-}
-.containerNounsIt{
-    color: ivory;
-    display: none;
-}
-.containerVerbsIt{
-    color: rgb(207, 205, 207);
     display: none;
 }
 .active{
