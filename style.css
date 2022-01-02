@@ -3,13 +3,14 @@ body {
     margin: 0%;
 }
 header {
-    height: 200px;
+    height: 18vw;
     width: auto;
     background-color: skyblue;
+    overflow: none;
 }
 .mainTitle {
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 100px;
+    font-size: 9vw;
     padding: 0%;
     margin: auto;
     display: flex;
@@ -20,13 +21,13 @@ header {
     margin: auto;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding: 20px 10px 30px 10px;
+    margin-top: 2vw;
+    padding: 2vw 1vw 3vw 1vw;
 }
 .card {
     border: 1px solid grey;
-    width: 350px;
-    height: 350px;
+    width: 22vw;
+    height: 22vw;
     display: inline-block;
     margin: 10px;
     border-radius: 5%;
@@ -54,6 +55,7 @@ h2{
     width: 100%;
     text-align: center;
     padding-top:45%;
+    
 }
 .italian {
     background-image: url(https://images.pexels.com/photos/7848820/pexels-photo-7848820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
@@ -77,6 +79,9 @@ h2{
     font-weight: bolder;
     transition: ease .5s;
 }
+form{
+    padding-bottom: 5px;
+}
 .subscribe{
     height: fit-content;
     overflow: hidden;
@@ -89,9 +94,9 @@ h2{
     color: white;
     flex-direction: column;
     text-align: center;
-   margin: auto;
-   display: flex;
-   padding-bottom: 40px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 40px;
 }
 .subscribe::after{
     content:" ";
@@ -110,12 +115,12 @@ h2{
     height: 65px;
     background-image: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
     position:absolute;
-    margin-top: -210px;
+    margin-top: -230px;
     left:-500px;
     z-index:1; 
 }
 .subscribe p{
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
     justify-content: center;
 }
@@ -182,11 +187,11 @@ h2{
     margin-top: 80px;
 }
 .containers{
-    padding-bottom: 30px ;
+    padding-bottom: 15px ;
 }
 .container {
 	position: relative;
-    width: 1400px;
+    width: 100vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -208,7 +213,7 @@ h2{
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 10%;
+	left: 12vw;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -221,7 +226,7 @@ h2{
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 35%;
+	left: 36vw;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -234,7 +239,7 @@ h2{
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 63%;
+	left: 60vw;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -247,7 +252,7 @@ h2{
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 90%;
+	left: 84vw;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -261,11 +266,11 @@ h2{
     display: flex;
     flex-direction: row;
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 30px;
     width: fit-content;
     justify-content:space-evenly;
     padding: 0;
     margin: 0;
+    font-size: 30px;
 }
 .menuItem:hover{
     border-bottom: 1px solid gainsboro;
@@ -278,28 +283,34 @@ h2{
 }
 .menu{
     border-bottom: 1px solid gainsboro;
+    padding-left: 2vw;
 }
 .submenu{
     font-family: 'Raleway', sans-serif;
     padding: 20px;
     height: fit-content;
     display: none;
+    font-size: 20px;
+    padding-left: 5vw;
+    padding-right: 2vw;
 }
 .active{
     color: seagreen;
     border-bottom: 1px solid gainsboro;
 }
 footer{
-    background: rgb(244,237,217);
     background: linear-gradient(0deg, rgba(244,237,217,1) 0%, rgba(255,255,255,1) 100%);
     padding: 0;
     margin: 30px 0 0 0 ;
-    height: 150px;
     font-family: 'raleway', sans-serif;
+    height: 150px; 
 }
 footer p{
-    padding: 50px 0px 0px 20px;
+    padding: 50px 0px 10px 20px;
     display: block;
+    margin-bottom: 0;
+    left: 10px;
+    
 }
 footer a{
     text-decoration: none;
@@ -312,3 +323,32 @@ footer a{
     display: flex;
     justify-content: space-evenly;
 }
+@media only screen and (min-width: 1400px) {
+ .header{ height: 200px}
+ .mainTitle{font-size: 100px;}
+ .menu{padding-left: 5vw;}
+ .card{height: 18vw;width: 18vw;}
+ h2{font-size: 30px;}
+.subscribe{font-size: 25px;}
+.containerIt::after {left: 20vw;}
+.containerFr::after {left: 40vw;}
+.containerAr::after {left: 60vw;}
+.containerO::after {left: 80vw;}
+}
+@media only screen and (max-width: 1200px) {
+    .list {flex-direction: column;}
+    .menu{padding-left: 0px;}
+}
+@media only screen and (max-width: 555px) {
+    h2{font-size: 20px;}
+    .list{font-size: 5vw;}
+    .submenu{font-size: 4vw;}
+    .containers{padding-bottom: 0;}
+    .send{margin-top: 10px;}
+    footer{margin-top: 0;}
+    footer a, footer p{font-size: 13px;}
+    .scrollBack{height: 35px; width: 35px;}
+    .fa-globe-europe{font-size: 35px;}
+    .subscribe{font-size: 18px;}
+    .subscribe p{font-size: 20px;}
+   }

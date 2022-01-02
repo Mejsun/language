@@ -17,7 +17,7 @@ const containerNounsIt = document.querySelector('div.containerNounsIt');
 const containerVerbsIt = document.querySelector('div.containerVerbsIt');
 const menuContainer = document.querySelector(".menu");
 const items = menuContainer.querySelectorAll("li");
-
+const input= document.querySelectorAll('.input')
 
 rainbow.addEventListener("mousemove",MouseEvent);
 function MouseEvent(e){
@@ -31,9 +31,8 @@ btnScrollToTop.addEventListener("click", function(){
   })
 })
 
-subscribed.addEventListener("click", function(oldDiv){
-  newDiv.style.display='block';
-})
+subscribed.addEventListener("click", function(){
+  newDiv.style.display='block';})
 
 cardIt.addEventListener("click",function(cardIt){
   containerIt.style.display='block';
