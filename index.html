@@ -20,115 +20,149 @@
         <h1 class="mainTitle">Language shake</h1>
     </header>
     <main class="main">
-        <div class="cards">
-            <div class="card italian"><div class="overlay"><h2>Italian</h2></div></div>
-            <div class="card french"><div class="overlay"><h2>French</h2></div></div>
-            <div class="card arabic"><div class="overlay"><h2>Arabic</h2></div></div>
-            <div class="card other"><div class="overlay"><h2>Other</h2></div></div>
-        </div>
+        <ul class="cards">
+            <li><a class="card italian" href='#containerIt'><div class="overlay"><h2>Italian</h2></div></a></li>
+            <li><a class="card french" href='#containerFr'><div class="overlay"><h2>French</h2></div></a></li>
+            <li><a class="card arabic" href='#containerAr'><div class="overlay"><h2>Arabic</h2></div></a></li>
+            <li><a class="card other" href='#containerO'><div class="overlay"><h2>Other</h2></div></a></li>
+        </ul>
         <div class="containers">
-        <div class="container containerIt">
-            <nav class="menu">
+            <div class="container containerIt hide" id="containerIt">         
                 <ul class="list">
-                    <li class="menuItem miNouns">Nouns</li>
-                    <li class="menuItem miVerbs">Verbs</li>
-                    <li class="menuItem miAandA">Articles and Adverbs</li>
-                    <li class="menuItem miPandP">Pronouns and Prepositions</li>
-                    <li class="menuItem miAdjectives">Adjectives</li>
-                    <li class="menuItem miCandI">Conjuctions and Interjections</li>
+                    <li><a class="menuItem miNouns" href="#containerNounsIt">Nouns</a></li>
+                    <li><a class="menuItem miVerbs" href="#containerVerbsIt">Verbs</a></li>
+                    <li><a class="menuItem miAandA" href="#containerAandAIt">Articles and Adverbs</a></li>                    
+                    <li><a class="menuItem miPandP" href="#containerPandPIt">Pronouns and Prepositions</a></li>
+                    <li><a class="menuItem miAdjectives" href="#containerAdjectives">Adjectives</a></li>
+                    <li><a class="menuItem miCandI" href="#containerCandIIt">Conjuctions and Interjections</a></li>
                 </ul>
-            </nav>
-                <div class="containerNounsIt submenu">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        <br>
-                    </p>
-                </div>
-                <div class="containerVerbsIt submenu">
-                    <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
-                        <br>  
-                    </p>
-                </div>
-                <div class="containerAandAIt submenu">
-                    <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
-                        <br>  
-                    </p>
-                </div>
-                <div class="containerPandPIt submenu">
-                    <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
-                        <br>  
-                    </p>
-                </div>
-                <div class="containerAdjectives submenu">
-                    <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
-                        <br>  
-                    </p>
-                </div>
-                <div class="containerCandIIt submenu">
-                    <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
-                        <br>  
-                    </p>
-                </div>
-        </div>
-        <div class="container containerFr">
-            <nav class="menu">
-                <ul class="list">
-                    <li class="menuItem miNouns">Nouns</li>
-                    <li class="menuItem miArticles">Articles</li>
-                    <li class="menuItem miVerbs">Verbs</li>
-                    <li class="menuItem miAdverbs">Adverbs</li>
-                    <li class="menuItem miPronouns">Pronouns</li>
-                    <li class="menuItem miAdjectives">Adjectives</li>
-                    <li class="menuItem miPrepositions">Prepositions</li>
-                    <li class="menuItem miConjuctions">Conjuctions</li>
-                    <li class="menuItem miInterjections">Interjections</li>
-                </ul>
-            </nav>
-                <div class="containerNounsFr submenu">
-                    <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
-                        <br>
-                    </p>
-                </div>
-                <div class="containerVerbsFr submenu">
-                    <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
-                        <br>  
-                    </p>
-                </div>
-        </div>
-        <div class="container containerAr">
-            <nav class="menu">
-                <ul class="list">
-                    <li class="menuItem miAlphabet">Alphabet</li>
-                    <li class="menuItem miNouns">Nouns</li>
-                    <li class="menuItem miParticles">Particles</li>
-                    <li class="menuItem miVerbs">Verbs</li>
-                </ul>
-            </nav>
-                <div class="containerLettersAr submenu">
-                    <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
-                        <br>
-                    </p>
-                </div>
-                <div class="containerNounsAr submenu">
-                    <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
-                        <br>
-                    </p>
-                </div>
-                <div class="containerParticlesAr submenu">
-                    <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
-                        <br>
-                    </p>
-                </div>
-                <div class="containerVerbsAr submenu">
-                    <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
-                        <br>  
-                    </p>
-                </div>
-        </div>
-        <div class="container containerO">
-            <nav class="menu">
-                <p class="list menuItem othertext">Coming Soon!</p>
-            </nav>    
-        </div>
+                    <div class="submenu containerNounsIt hide" id="containerNounsIt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <br>
+                            Hello
+                        </p>
+                    </div>
+                    <div class="submenu containerVerbsIt hide" id="containerVerbsIt">
+                        <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerAandAIt hide" id="containerAandAIt">
+                        <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerPandPIt hide" id="containerPandPIt">
+                        <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerAdjectives hide" id="containerAdjectives">
+                        <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerCandIIt hide" id="containerCandIIt">
+                        <p>Vel pretium lectus quam id. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. In massa tempor nec feugiat. 
+                            <br>  
+                        </p>
+                    </div>
+            </div>
+            <div class="container containerFr hide" id="containerFr">
+                <nav class="menu">
+                    <ul class="list">
+                        <li><a class="menuItem miNouns" href="#containerNounsFr">Nouns</a></li>
+                        <li><a class="menuItem miVerbs" href="#containerVerbsFr">Verbs</a></li>
+                        <li><a class="menuItem miArticles" href="#containerArtFr">Articles</li>
+                        <li><a class="menuItem miAdverbs" href="#containerAdvFr">Adverbs</a></li>
+                        <li><a class="menuItem miPronouns" href="#containerProFr">Pronouns</a></li>
+                        <li><a class="menuItem miAdjectives" href="#containerAdjFr">Adjectives</a></li>
+                        <li><a class="menuItem miPrepositions" href="#containerPrepFr">Prepositions</a></li>
+                        <li><a class="menuItem miConjuctions" href="#containerConFr">Conjuctions</a></li>
+                        <li><a class="menuItem miInterjections" href="#containerIntFr">Interjections</a></li>
+                    </ul>
+                </nav>
+                    <div class="submenu containerNounsFr hide" id="containerNounsFr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerVerbsFr hide" id="containerVerbsFr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerArtFr hide" id="containerArtFr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerAdvFr hide" id="containerAdvFr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerProFr hide" id="containerProFr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerAdjFr hide" id="containerAdjFr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerPrepFr hide" id="containerPrepFr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerConFr hide" id="containerConFr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+                    <div class="submenu containerIntFr hide" id="containerIntFr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+            </div>
+            <div class="container containerAr hide" id="containerAr">
+                <nav class="menu">
+                    <ul class="list">
+                        <li><a class="menuItem miAlphabet" href="#containerLettersAr">Alphabet</a></li>
+                        <li><a class="menuItem miNouns" href="#containerNounsAr">Nouns</a></li>
+                        <li><a class="menuItem miParticles" href="#containerParticlesAr">Particles</a></li>
+                        <li><a class="menuItem miVerbs" href="#containerVerbsAr">Verbs</a></li>
+                    </ul>
+                </nav>
+                    <div class="submenu containerLettersAr hide" id="containerLettersAr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerNounsAr hide" id="containerNounsAr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerParticlesAr hide" id="containerParticlesAr">
+                        <p>Viverra ipsum nunc aliquet bibendum enim. Risus at ultrices mi tempus imperdiet nulla malesuada. Auctor urna nunc id cursus metus aliquam eleifend.
+                            <br>
+                        </p>
+                    </div>
+                    <div class="submenu containerVerbsAr hide" id="containerVerbsAr">
+                        <p>Sit amet massa vitae tortor condimentum. Mattis aliquam faucibus purus in massa tempor nec feugiat nisl. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
+                            <br>  
+                        </p>
+                    </div>
+            </div>
+            <div class="container containerO hide" id="containerO">
+                <nav class="menu">
+                    <p class="list menuItem othertext">Coming Soon!</p>
+                </nav>    
+            </div>
      </div>
         <div class="subscribe">
                 <form class="newsletter" method="POST" action="https://formsubmit.co/mejsunalghoul@gmail.com" target="_blank">
