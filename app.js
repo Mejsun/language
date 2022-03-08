@@ -4,6 +4,9 @@ const newDiv = document.querySelector('div.thanks');
 const btnScrollToTop = document.querySelector(".scrollBack");
 const card = document.querySelectorAll('.card')
 const menuItem = document.querySelectorAll('.menuItem')
+const inputName = document.querySelector('.name')
+const inputEmail = document.querySelector('.email')
+
 
 //changing background on mousem moving
 rainbow.addEventListener("mousemove",MouseEvent);
@@ -19,8 +22,11 @@ btnScrollToTop.addEventListener("click", function(){
   });})
 
 //show thank you div after subscribing
-subscribed.addEventListener("click", function(){
-  newDiv.style.display='block';})
+  subscribed.addEventListener("click", function(){ 
+    if (inputEmail.checkValidity() && inputName.checkValidity()){
+      newDiv.style.display='block';
+    } 
+  })
 
 //toggle language cards submenu
 card.forEach( l => {
@@ -39,8 +45,6 @@ card.forEach( l => {
   })})
 
 //separate function for each grammar field
-
-
   menuItem.forEach( l => {
     l.addEventListener('click', (e) =>{
       if(!l.classList.contains('othertext')){
@@ -62,7 +66,6 @@ card.forEach( l => {
   for (let i = 0; i < menuItem.length; i++) {
   menuItem[i].addEventListener('click', function() {
     const current = document.getElementsByClassName("active");
-
     if (current.length > 0) {
       current[0].className = current[0].className.replace(" active", "");
     }
