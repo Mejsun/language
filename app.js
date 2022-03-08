@@ -24,7 +24,7 @@ btnScrollToTop.addEventListener("click", function(){
 //show thank you div after subscribing
   subscribed.addEventListener("click", function(){ 
     if (inputEmail.checkValidity() && inputName.checkValidity()){
-      newDiv.style.display='block';
+      newDiv.style.display='flex';
     } 
   })
 
