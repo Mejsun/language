@@ -40,6 +40,8 @@ a{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 .overlay{  
     height: 100%;
@@ -48,6 +50,7 @@ a{
     display: flex;
     border-radius: 10px;
     position: relative;
+    transition: ease-in-out 0.5s;
 }
 h2{
     font-family:'Raleway', sans-serif;
@@ -60,25 +63,20 @@ h2{
 }
 .italian {
     background-image: url(https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-size: cover;
 }
 .french {
     background-image: url(https://images.pexels.com/photos/8431136/pexels-photo-8431136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    background-size: cover;
 }
 .arabic {
     background-image: url(https://images.pexels.com/photos/2239422/pexels-photo-2239422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-size: cover;
 }
 .other {
     background-image: url(https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-size: cover;
 }
 .overlay:hover {
     height: 0%;
     color: black;
-    opacity: 110%;
-    transition: ease .5s;
+    text-shadow: 2px 1px gainsboro;
 }
 .subscribe{
     height: fit-content;
@@ -90,7 +88,7 @@ h2{
     color: white;
     text-align: center;
     margin: auto;
-    padding: 65px;
+    padding: 65px 0;
 }
 .subscribe::after{
     content:" ";
@@ -173,6 +171,9 @@ footer{
     justify-content: space-evenly;
     height: 80%;
 }
+.miniMenu a:hover{
+    text-decoration: underline;
+}
 .scrollBack{
     position: fixed;
     right: 10px;
@@ -241,7 +242,7 @@ footer{
     font-size: 20px;
 }
 .active{
-    color: rgb(17, 99, 52);
+    color: white;
     border-bottom: 1px solid gainsboro;
 }
 @media only screen and (max-width: 996px) {
@@ -249,20 +250,15 @@ footer{
 }
 @media only screen and (max-width: 768px) {
     .list {flex-direction: column;}
+    .card, h2{height: 20vh;}
+    footer{height: 26vh;}
 }
-/*
 @media only screen and (max-width: 555px) {
-    h2{font-size: 20px;}
-    .list{font-size: 5vw;}
-    .submenu{font-size: 4vw;}
-    .containers{padding-bottom: 0;}
-    .send{margin-top: 10px;}
-    footer{margin-top: 0;}
-    footer a, footer p{font-size: 13px;}
-    .scrollBack{height: 35px; width: 35px;}
-    .fa-globe-europe{font-size: 35px;}
-    .subscribe{font-size: 18px;}
-    .subscribe p{font-size: 20px;}
+    h2, .submenu, .subscribe{font-size: 15px}
+    .list{font-size: 1rem;} 
+    .subscribe p{font-size: 18px;}
+    .input {width: 100px; padding: 5px; font-size: 12px;}
+    .send{width: 80px; padding: 5px; font-size: 12px; margin-top: 5px;}
+    footer{font-size: 1rem; padding: 20px 0;}
+    .scrollBack{height: 30px; width: 30px; font-size: 30px;}
    }
-
-   */
